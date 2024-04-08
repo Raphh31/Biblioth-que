@@ -3,11 +3,18 @@
 namespace App\Controllers;
 
 class Connection extends BaseController
+
 {
-    public function index(): string
+
+    public function index()
     {
-        return view("login_form");
+        $template =
+            view('templates/Header.php').
+            view("login_form").
+            view('templates/footer.php');
+        return $template;
     }
+
 
     public function attemptLogin()
     {
