@@ -16,9 +16,9 @@
                     <div class="col-sm-6 col-md-3 item">
                         <h3>Services</h3>
                         <ul>
-                            <li><a href="#">Vente de produit stupéfiant</a></li>
-                            <li><a href="#">Go fast</a></li>
-                            <li><a href="#">Vol à main armé</a></li>
+                            <li><a href="#">Support Informatique</a></li>
+                            <li><a href="#">Installation</a></li>
+                            <li><a href="#">Réparation</a></li>
                         </ul>
                     </div>
                     <div class="col-sm-6 col-md-3 item">
@@ -26,12 +26,12 @@
                         <ul>
                             <li><a href="#">Instagram</a></li>
                             <li><a href="#">Facebook</a></li>
-                            <li><a href="#">Pornhub</a></li>
+                            <li><a href="#">LinkedIn</a></li>
                         </ul>
                     </div>
                     <div class="col-md-6 item text">
                         <h3 >Adresse</h3>
-                        <p>Au coin de la rue, à coté du bloc n°4, 31100, Mirail</p>
+                        <p>Centre Commercial Le Perget, 4 avenue André Marie Ampère, 31770 Colomiers</p>
                     </div>
 
         </footer>
