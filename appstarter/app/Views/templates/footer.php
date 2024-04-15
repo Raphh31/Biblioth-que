@@ -33,10 +33,7 @@
                         <h3 >Adresse</h3>
                         <p>Au coin de la rue, à coté du bloc n°4, 31100, Mirail</p>
                     </div>
-                    <div class="col item social"><a href="#"><i class="icon ion-social-facebook"></i></a><a href="#"><i class="icon ion-social-twitter"></i></a><a href="#"><i class="icon ion-social-snapchat"></i></a><a href="#"><i class="icon ion-social-instagram"></i></a></div>
-                </div>
-                <p class="copyright">Company Name © 2018</p>
-            </div>
+
         </footer>
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
