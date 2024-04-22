@@ -1,6 +1,7 @@
 
 <body>
-<h1>LES ACTUALIVRES</h1>
+
+    >
 <h2>Harry Potter, la rétrospective J.K Rowling</h2><br>
 
 
@@ -31,5 +32,6 @@ George Milton, un homme plutôt petit, et Lennie Small,<br>
 un grand colosse présentant une déficience intellectuelle,<br>
 sont deux amis d'enfance.<br>
 ls errent sur les routes de Californie en travaillant comme saisonniers dans des ranchs..</p> 
+</body>
 
 </html>

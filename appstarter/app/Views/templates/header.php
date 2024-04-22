@@ -12,12 +12,14 @@
 <header>
 <title>BIBLIOTHEQUE G X L</title> 
 <nav>
-    <li class="menu">
-      <a href="#">MENU</a>
-      <ul class="sous-menu">
-        <li><a href="/home">Accueil</a></li>
-        <li><a href="/login"> Espace Abonné </a></li>
-        <li><a href="/gestiondeslivres">Gestion des livres</a></li>
-  </ul>
+      <li class="menu">
+        <a href="#">MENU</a>
+        <ul class="sous-menu">
+        <div class="text-gradient">
+          <li><a href="/home">Accueil</a></li>
+          <li><a href="/login"> Espace Abonné </a></li>
+          <li><a href="/gestiondeslivres">Gestion des livres</a></li>
+    </ul>
+</div>    
 </li></ul></nav>
     
