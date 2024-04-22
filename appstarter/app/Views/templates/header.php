@@ -11,7 +11,7 @@
 </head>
 <header>
 <title>BIBLIOTHEQUE G X L</title> 
-<body><nav>
+<nav>
     <li class="menu-deroulant">
       <a href="#">MENU</a>
       <ul class="sous-menu">
