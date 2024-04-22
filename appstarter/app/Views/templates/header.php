@@ -15,9 +15,9 @@
     <li class="menu-deroulant">
       <a href="#">MENU</a>
       <ul class="sous-menu">
-        <li><a href="http://siteweb/Connexion"> Connexion </a></li>
-        <li><a href="http://siteweb/Quisommesnous"> Qui sommes nous ? </a></li>  
-      <li><a href="http://siteweb/Contacteznous"> Contactez-nous </a></li>
+        <li><a href="http://siteweb/Connexion"> Espace Abonné </a></li>
+        <li><a href="http://siteweb/GestionLivres">Gestion des livres</a></li>
+        <li><a href="http://siteweb/Contacteznous"> Contactez-nous </a></li>
   </ul>
 </li></ul></nav>
 </header>   
