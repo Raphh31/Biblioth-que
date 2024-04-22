@@ -1,0 +1,2 @@
+INSERT INTO `abonne` (`matricule_abonne`, `nom_abonne`, `date_naissance_abonne`, `date_adhesion_abonne`, `adresse_abonne`, `telephone_abonne`, `CSP_abonne`) VALUES 
+('1', 'Georges', '1999-11-01', '2024-04-22', 'Home', '05050505050', 'Serial Coder');
