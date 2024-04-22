@@ -12,7 +12,7 @@
 <header>
 <title>BIBLIOTHEQUE G X L</title> 
 <nav>
-    <li class="menu-deroulant">
+    <li class="menu">
       <a href="#">MENU</a>
       <ul class="sous-menu">
         <li><a href="/home">Accueil</a></li>
