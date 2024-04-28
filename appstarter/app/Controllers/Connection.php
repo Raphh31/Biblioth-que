@@ -33,7 +33,7 @@ public function attemptLogin()
 }
 
 
-private function loginUser(?object $user = null)
+private function loginUser($user = null)
 {
     $session = session();
     $session->set([
@@ -43,15 +43,4 @@ private function loginUser(?object $user = null)
     return redirect()->to("home");
 }
 
-private function loginUser($user = null)
-{
-    $session = session();
-    $session->set([
-        'username' => isset($user) ? ($user['matricule_abonne'] . " " . strtoupper($user['nom_abonne'])) : 'Administrator',
-        'role' => isset($user) ? 'user' : 'admin',
-        'loggedIn' => true
-        
-            ]);
-    return redirect()->to("home");
-}
 }
