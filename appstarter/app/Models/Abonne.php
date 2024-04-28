@@ -13,7 +13,12 @@ class Abonne extends Model
 
     function getAbonneByMatricule($matricule)
     {
-        return $this->find('matricule_abonne');
+        return $this->find($matricule);
+        if ($result !== null) {
+            print($result);
+            return (object) $result;
+        }
+        return null;
     }
 
 }
