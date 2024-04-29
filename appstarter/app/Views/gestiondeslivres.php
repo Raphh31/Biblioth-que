@@ -26,7 +26,11 @@
                         <input class="bouton" type="submit" value="Modifier">
 
                     </form>
+<<<<<<< HEAD
+                    <a href="/supprimeAbo?matricule_abonne=<?= $livre['code_catalogue'] ?>">Supprimer</a>
+=======
                     <a href="/supprimelivre?matricule_abonne=<?= $livre['code_catalogue'] ?>">Supprimé</a>
+>>>>>>> 21c42902f3fddc83fd4238df5cfab64e35627b29
 
                 </td>
                 </tr>
@@ -34,7 +38,7 @@
 
             </tbody>
     </table>
-    <h3><a href="/creelivre">Ajouté un nouveau livre</a> </h3>
+    <h3><a href="/creelivre">Ajouter un nouveau livre</a> </h3>
 
     
 
