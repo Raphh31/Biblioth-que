@@ -1,19 +1,9 @@
 <body>
-<h1>Gestion des abonné</h1>
+<?php if (isset($loggedIn) && $loggedIn == true) : ?>
+            <h1>Bienvenue dans votres Espace Dédié, <?= esc($name) ?></h1>
+        <?php endif ?>
 
-    <table>
-            <thead>
-
-    <table id=tababonne>
-            <thead>
-
-                    <?php foreach ($abonnes as $abonne) : ?>
-                <tr>
-
-
-
-                <td>
-                    <form action="<?= base_url('/modifyAbo') ?>" method="post">
+        <form action="<?= base_url('/modifyAbo') ?>" method="post">
                         <label for='matricule_abonne'>matricule_abonne :</label>
                         <input type="text" id='matricule_abonne' name='matricule_abonne' value = "<?php echo htmlspecialchars( $abonne['matricule_abonne']); ?>" /> ><br>
 
@@ -40,21 +30,5 @@
                     </form>
                     <a href="/supprimeAbo?matricule_abonne=<?= $abonne['matricule_abonne'] ?>">Supprimé</a>
 
-                </td>
 
-
-                    
-
-                </tr>
-            <?php endforeach; ?>
-
-
-            </tbody>
-    </table>
-
-    
-
-
-
-
-
+</body>

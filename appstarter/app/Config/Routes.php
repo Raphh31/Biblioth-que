@@ -15,3 +15,4 @@ $routes->get('/supprimeAbo', 'GestionAbonne::SupprimeAbonne', ['filter' => \App\
 $routes->get('/modifyAbo', 'GestionAbonne::ModifyAbonne', ['filter' => \App\Filters\AuthenticatedFilter::class]);
 $routes->post('/modifyAbo', 'GestionAbonne::ModifyAbonne',['filter' => \App\Filters\AuthenticatedFilter::class]);
 
+$routes->get('/espaceAbonne', 'EspaceAbonne::index', ['filter' => \App\Filters\AuthenticatedFilter::class]);
