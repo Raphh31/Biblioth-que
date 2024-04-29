@@ -21,8 +21,6 @@ $routes->post('/modifylivre', 'GestionLivres::ModifyLivre',['filter' => \App\Fil
 $routes->post('/addlivre', 'GestionLivres::AJouteLivre',['filter' => \App\Filters\AuthenticatedFilter::class]);
 
 
-
-
 $routes->get('/gestiondesabonne', 'GestionAbonne::index', ['filter' => \App\Filters\AuthenticatedFilter::class]);
 $routes->get('/creeAbonne', 'GestionAbonne::creeAbo', ['filter' => \App\Filters\AuthenticatedFilter::class]);
 $routes->get('/supprimeAbo', 'GestionAbonne::SupprimeAbonne', ['filter' => \App\Filters\AuthenticatedFilter::class]);
