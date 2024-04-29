@@ -28,6 +28,7 @@
                     </form>
                     <a href="/supprimelivre?code=<?= $livre['code_catalogue'] ?>">Supprimer</a>
 
+                    
                 </td>
                 </tr>
             <?php endforeach; ?>
