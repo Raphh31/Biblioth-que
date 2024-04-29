@@ -39,3 +39,7 @@
 </body>
 
 </html>
+<body>
+  <main><!-- Main content --></main>
+  <footer><!-- Footer content --></footer>
+</body>

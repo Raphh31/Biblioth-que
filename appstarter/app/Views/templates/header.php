@@ -25,7 +25,7 @@
           <li><a href="/home">Accueil</a></li>
           <li><a href="/login"> Espace Abonné </a></li>
           <li><a href="/gestiondeslivres">Gestion des livres</a></li>
-          <li><a href="/gestiondesabonne">Gestion des Abonne</a></li>
+          <li><a href="/gestiondesabonne">Gestion des Abonnées</a></li>
     </ul>
 </div>    
 </li></ul></nav>
