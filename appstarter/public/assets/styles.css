@@ -14,7 +14,6 @@ ul {
     text-decoration: none;
   }
   
-  /* Change the link color to #111 (black) on hover */
   li a:hover {
     background-color: #111;
   }
@@ -44,7 +43,17 @@ body {
   display: flex;
   flex-direction: column;
 }
+@font-face {
+  font-family: 'Minecraft';
+  src: url('/assets/Minecraft.ttf'), format('truetype');
+}
 
+body{
+  background-image: url("/assets/minecraftbiblio.jpg");    
+  background-size: 100%;
+  font-family: 'Minecraft';
+  color:#fff;
+}
 /* styles.css */
 .text-gradient {
   background-color: #282d32; /* Dégradé linéaire */
@@ -55,7 +64,7 @@ body {
   padding:30px 0;
   color:#f0f9ff;
   background-color:#282d32;
-  position : absolute;
+  position : relative;
   bottom : 0;
   left : 0;
   right :0;
