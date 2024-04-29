@@ -27,6 +27,6 @@ class Abonne extends Model
 
     function SuppAbonne($matricule)
     {
-        $this->delete($matricule);
+        $this->where('matricule_abonne',$matricule)->delete();
     }
 }
