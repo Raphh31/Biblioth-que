@@ -9,5 +9,6 @@ $routes->get('/', 'Home::index', ['filter' => \App\Filters\AuthenticatedFilter::
 $routes->get('/login', 'Connection::index');
 $routes->post('/login', 'Connection::attemptLogin');
 $routes->get('/home', 'Home::index', ['filter' => \App\Filters\AuthenticatedFilter::class]);
-$routes->get('/gestiondeslivres', 'GestionLivres::index');
+$routes->get('/gestiondeslivres', 'GestionLivres::index', ['filter' => \App\Filters\AuthenticatedFilter::class]);
+$routes->get('/gestiondesabonne', 'GestionAbonne::index', ['filter' => \App\Filters\AuthenticatedFilter::class]);
 

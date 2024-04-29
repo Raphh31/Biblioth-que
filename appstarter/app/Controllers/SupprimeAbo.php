@@ -2,16 +2,14 @@
 
 namespace App\Controllers;
 
-class GestionLivres extends BaseController
+class GestionAbonne extends BaseController
 {
 
-    public function index()
+    public function index($matricule)
     {
 
-        $Livre = model(\App\Models\Livre::class);
-        $livres = $Livre->getLivre();
-        $data['livres']=$livres;
-        $session=session();
+        $abonne = model(\App\Models\abonne::class);
+        $abonnes = $abonne->SuppAbonne($matricule);
         
         $template =
             view('templates/Header.php',[
@@ -19,9 +17,11 @@ class GestionLivres extends BaseController
             'name' => $session->get('username')
             ]).
             
-            view('gestiondeslivres',$data).
+            view('gestiondesabonne').
             view('templates/footer');
+            
         return $template;
+
     }
 
 }

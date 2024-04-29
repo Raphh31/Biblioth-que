@@ -5,7 +5,6 @@ namespace App\Controllers;
 class Connection extends BaseController
 
 {
-
     public function index()
     {
         $template =
@@ -14,32 +13,33 @@ class Connection extends BaseController
             view('templates/footer.php');
         return $template;
     }
+
 public function attemptLogin()
     {
-        $AbonneModel = new \App\Models\Abonne();
+        $abonneModel = new \App\Models\Abonne();
         $values = $this->request->getPost(['login', 'password']);
-            if (!empty($values) && $values['login'] == APP_ADMIN_LOGIN &&
-$values['password'] == APP_ADMIN_PASSWORD) {
+            if (!empty($values) && $values['login'] == APP_ADMIN_LOGIN && $values['password'] == APP_ADMIN_PASSWORD) {
         return $this->loginUser();
     }
 
-    $rechercheAbonne = $AbonneModel ->getAbonneByMatricule($values['login']);
+    $rechercheAbonne = $abonneModel->getAbonneByMatricule($values['login']);
 
 
     if (isset($rechercheAbonne) && $rechercheAbonne['nom_abonne'] === $values['password'])
-        return $this->loginUser($rechercheAbonne);
+    return $this->loginUser($rechercheAbonne);
     else {
         return redirect()->to('login');
     }
 }
-private function loginUser(?object $user = null)
+
+
+private function loginUser($user = null)
 {
     $session = session();
     $session->set([
-        'username' => isset($user) ? ($user['nom_abonne'] . strtoupper($user['nom_abonne'])) : 'Administrator',
+        'username' => isset($user) ? ($user['nom_abonne'] . " " . strtoupper($user['nom_abonne'])) : 'Administrator',
         'loggedIn' => true
     ]);
     return redirect()->to("home");
 }
-
 }
