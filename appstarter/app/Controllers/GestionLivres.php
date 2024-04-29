@@ -48,14 +48,14 @@ class GestionLivres extends BaseController
         $values = $this->request->getPost(['code_catalogue', 'titre_livre', 'theme_livre']);
         $Livre->ModifyLivre($values);
         
-        return redirect()->to('gestiondesabonne');
+        return redirect()->to('gestiondeslivres');
     }
 
     public function AJouteLivre() {
         $Livre = model(\App\Models\Livre::class);
         $values = $this->request->getPost(['code_catalogue', 'titre_livre', 'theme_livre']);
         $Livre->   ADDLivre($values);
-        return redirect()->to('gestiondesabonne');
+        return redirect()->to('gestiondeslivres');
     }
 
 
@@ -64,7 +64,7 @@ class GestionLivres extends BaseController
         $matricule = $this->request->getGet();
         $Livre = model(\App\Models\Livre::class);
         $Livre->SuppAbonne($matricule);
-        return redirect()->to('gestiondesabonne');
+        return redirect()->to('gestiondeslivres');
 
     }
 
