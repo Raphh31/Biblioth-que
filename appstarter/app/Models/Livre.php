@@ -16,12 +16,28 @@ class Livre extends Model
         return $this->find();
     }
 
-    function getLivreBycode_catalogue($code_catalogue)
+    function getLivreBycode($code)
     {
-        return $this->find($code_catalogue);
-        if ($result !== null) {
-            return (object) $result;
-        }
-        return null;
+        return $this->find($code);
     }
+
+    function ModifyLivre($data)
+    {
+        return $this->update($data['code_catalogue'], $data);
+
+    }
+
+    function ADDLivre($data){
+        $this->where('code_catalogue',$data['code_catalogue'])->insert($data);
+    }
+
+
+
+    function SuppLivre($matricule)
+    {
+        $this->where('code_catalogue',$matricule)->delete();
+    }
+
+
+
 }
