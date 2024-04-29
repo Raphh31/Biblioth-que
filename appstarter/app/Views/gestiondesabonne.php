@@ -41,16 +41,12 @@
                     <a href="/supprimeAbo?matricule_abonne=<?= $abonne['matricule_abonne'] ?>">Supprimé</a>
 
                 </td>
-
-
-                    
-
                 </tr>
             <?php endforeach; ?>
 
-
             </tbody>
     </table>
+    <h3><a href="/creeAbonne">Crée un nouvelle abonne</a> </h3>
 
     
 
