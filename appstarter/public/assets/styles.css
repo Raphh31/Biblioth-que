@@ -109,3 +109,9 @@ margin: auto;
 {
 margin: auto;
 }
+input[type=text] {
+  width: 70%;  
+  margin: 8px 0;
+  box-sizing: border-box;
+  border-radius: 4px;
+}
