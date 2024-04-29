@@ -59,11 +59,11 @@ class GestionLivres extends BaseController
     }
 
 
-    public function SupprimeLivre()
+    public function SuppLivre()
     {
-        $matricule = $this->request->getGet();
+        $code = $this->request->getGet();
         $Livre = model(\App\Models\Livre::class);
-        $Livre->SuppAbonne($matricule);
+        $Livre->SuppLivre($code);
         return redirect()->to('gestiondeslivres');
 
     }
