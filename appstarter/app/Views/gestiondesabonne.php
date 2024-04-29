@@ -1,24 +1,15 @@
-
-
 <body>
 <h1>Gestion des abonné</h1>
 
     <table>
             <!-- <thead>
-                <tr>
-                    <th>matricule_abonne </th>
-                    <th>nom_abonne </th>
-                    <th>date_naissance_abonne </th>
-                    <th>date_adhesion_abonne </th>
-                    <th>adresse_abonne </th>
-                    <th>telephone_abonne </th>
-                    <th>CSP_abonne </th>
-                </tr>
-            </thead> -->
-            <tbody>
+
+    <table id=tababonne>
+            <thead>
 
                     <?php foreach ($abonnes as $abonne) : ?>
                 <tr>
+
 
 
                 <td>
@@ -53,6 +44,7 @@
 
 
                     
+
                 </tr>
             <?php endforeach; ?>
 
