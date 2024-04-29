@@ -19,11 +19,19 @@ class Abonne extends Model
     function getAbonneByMatricule($matricule)
     {
         return $this->find($matricule);
-        if ($result !== null) {
-            return (object) $result;
-        }
-        return null;
     }
+
+    function ModifyAbonne($data)
+    {
+        return $this->update($data['matricule_abonne'], $data);
+
+    }
+
+    function ADDAbonne($data){
+        $this->where('matricule_abonne',$data['matricule_abonne'])->insert($data);
+    }
+
+
 
     function SuppAbonne($matricule)
     {
