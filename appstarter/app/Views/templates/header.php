@@ -12,16 +12,15 @@
 <header>
 <title>BIBLIOTHEQUE G X L</title> 
 <nav>
-      <li class="menu">
-        <a href="#">MENU</a>
         <ul class="sous-menu">
-          <li><a href="/home">Accueil</a></li>
-          <li><a href="/login">Espace Abonné </a></li>
-          <li><a href="/gestiondeslivres">Gestion des livres</a></li>
-          <li><a href="/gestiondesabonne">Gestion des Abonnées</a></li>
+        <div class="text-gradient">
+            <li><a href="/home">MENU</a></li>
+            <li><a href="/home">Accueil</a></li>
+            <li><a href="/login"> Espace Abonné </a></li>
+            <li><a href="/gestiondeslivres">Gestion des livres</a></li>
+            <li><a href="/gestiondesabonne">Gestion des Abonnées</a></li>
     </ul>
 </div>    
-
 
 <?php if (isset($loggedIn) && $loggedIn == true) : ?>
         <span>Bonjour, <?= esc($name) ?></span>
