@@ -2,7 +2,7 @@
 <h1>Gestion des abonné</h1>
 
     <table>
-            <!-- <thead>
+            <thead>
 
     <table id=tababonne>
             <thead>
