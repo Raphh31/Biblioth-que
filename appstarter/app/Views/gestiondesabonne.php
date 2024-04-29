@@ -1,6 +1,7 @@
 <body>
-<h1>Gestion des abonnés</h1>
+<h1>Gestion des abonné</h1>
 <body>
+    <h1>Gestion des abonnés</h1>
 
     <table id="tababonne">
         <thead>
@@ -54,10 +55,3 @@
             </tbody>
     </table>
     <h3><a href="/creeAbonne">Créer un nouvelle abonne</a> </h3>
-
-    
-
-
-
-
-

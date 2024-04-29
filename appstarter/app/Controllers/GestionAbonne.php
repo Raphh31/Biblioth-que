@@ -50,7 +50,6 @@ class GestionAbonne extends BaseController
     public function ModifyAbonne() {
         $matricule = $this->request->getGet();
         $abonne = model(\App\Models\abonne::class);
-
         $values = $this->request->getPost(['matricule_abonne', 'nom_abonne', 'date_naissance_abonne', 'date_adhesion_abonne', 'adresse_abonne', 'telephone_abonne', 'CSP_abonne']);
         $abonnes = $abonne->ModifyAbonne($values);
         

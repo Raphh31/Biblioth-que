@@ -24,7 +24,6 @@ class Abonne extends Model
     function ModifyAbonne($data)
     {
         return $this->update($data['matricule_abonne'], $data);
-
     }
 
     function ADDAbonne($data){
