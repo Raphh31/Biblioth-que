@@ -1,104 +1,104 @@
 ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #333;
-  }
-   
-  li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 12px 16px;
-    text-decoration: none;
-  }
-  
-  li a:hover {
-    background-color: #111;
-  }
-.top {
-    position: absolute; 
-  }
-
-  body{
-    background-image: url("/assets/minecraftbiblio.jpg");    
-    background-size: 100%;
-}
-h1{
-    color:#fff
-}
-h2{
-  color:#fff
-}
-/* styles.css */
-
-html, body {
-  height: 100%;
+  list-style-type: none;
   margin: 0;
-  color :#fff;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
 }
 
-body {
-  display: flex;
-  flex-direction: column;
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 12px 16px;
+  text-decoration: none;
 }
-@font-face {
-  font-family: 'Minecraft';
-  src: url('/assets/Minecraft.ttf'), format('truetype');
+
+li a:hover {
+  background-color: #111;
+}
+.top {
+  position: absolute; 
 }
 
 body{
-  background-image: url("/assets/minecraftbiblio.jpg");    
+  background-image: url("/assets/minecraftbiblio.jpg");
   background-size: 100%;
-  font-family: 'Minecraft';
-  color:#fff;
 }
-/* styles.css */
-.text-gradient {
-  background-color: #282d32; /* Dégradé linéaire */
-  padding: 10px;
+h1{
+  color:#fff
 }
 
-.footer-dark {
-  padding:30px 0;
-  color:#f0f9ff;
-  background-color:#282d32;
-  position : relative;
-  bottom : 0;
-  left : 0;
-  right :0;
+h2{
+color:#fff
+}
+
+html, body {
+height: 100%;
+margin: 0;
+color :#fff;
 }
 
 body {
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+display: flex;
+flex-direction: column;
+}
+@font-face {
+font-family: 'Minecraft';
+src: url('/assets/Minecraft.ttf'), format('truetype');
 }
 
-footer {
-  margin-top: auto;
-}
-body, html {
-  margin: 0;
-  padding: 0;
-  height: 100%;
+body{
+background-image: url("/assets/minecraftbiblio.jpg");
+background-size: 100%;
+font-family: 'Minecraft';
+color:#fff;
 }
 
-.wrapper {
-  display: flex;
-  flex-direction: column;
-  height: 100%;
-}
-
-.content {
-  flex: 1;
-  padding: 20px;
+.text-gradient {
+background-color: #282d32;
+padding:10px;
 }
 
 .footer-dark {
-  padding: 30px 0;
-  color: #f0f9ff;
-  background-color: #282d32;
-  text-align: center;
+padding:30px 0;
+color:#f0f9ff;
+background-color:#282d32;
+position : relative;
+bottom : 0;
+left : 0;
+right :0;
+}
+
+body {
+min-height: 100vh;
+display: flex;
+flex-direction: column;
+}
+
+footer {
+margin-top: auto;
+}
+body, html {
+margin: 0;
+padding: 0;
+height: 100%;
+}
+
+.wrapper {
+display: flex;
+flex-direction: column;
+height: 100%;
+}
+
+.content {
+flex: 1;
+padding: 20px;
+}
+
+.footer-dark {
+padding: 5px 0;
+color: #f0f9ff;
+background-color: #282d32;
+text-align: center;
 }
