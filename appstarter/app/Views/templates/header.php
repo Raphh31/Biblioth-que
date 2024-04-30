@@ -15,7 +15,6 @@
     <nav>
         <table>
             <tr class="sous-menu">
-                <th><a href="/home">MENU</a></th>
                 <th><a href="/home">Accueil</a></th>
                 <th><a href="/espaceAbonne">Espace Abonné </a></th>
                 <th><a href="/gestiondeslivres">Gestion des livres</a></th>

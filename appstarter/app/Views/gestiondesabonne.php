@@ -1,6 +1,4 @@
 <body>
-<h1>Gestion des abonné</h1>
-<body>
     <h1>Gestion des abonnés</h1>
 
     <table id="tababonne">
