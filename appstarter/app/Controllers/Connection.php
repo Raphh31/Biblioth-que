@@ -19,8 +19,7 @@ class Connection extends BaseController
         $abonneModel = new \App\Models\Abonne();
         $values = $this->request->getPost(['login', 'password']);
         if (
-            !empty($values) && $values['login'] == APP_ADMIN_LOGIN &&
-            $values['password'] == APP_ADMIN_PASSWORD
+            !empty($values) && $values['login'] == APP_ADMIN_LOGIN && $values['password'] == APP_ADMIN_PASSWORD
         ) {
             return $this->loginUser();
         }
