@@ -14,32 +14,43 @@ class Connection extends BaseController
         return $template;
     }
 
-public function attemptLogin()
+    public function attemptLogin() // Fonction de tentative de connexion
     {
         $abonneModel = new \App\Models\Abonne();
         $values = $this->request->getPost(['login', 'password']);
-            if (!empty($values) && $values['login'] == APP_ADMIN_LOGIN && $values['password'] == APP_ADMIN_PASSWORD) {
-        return $this->loginUser();
-    }
+        if (
+            !empty($values) && $values['login'] == APP_ADMIN_LOGIN && $values['password'] == APP_ADMIN_PASSWORD
+        ) {
+            return $this->loginUser();
+        }
+        $rechercheAbonne = $abonneModel->getAbonneByMatricule($values['login']);
+        if ($rechercheAbonne !== null) {
+            if ($rechercheAbonne->nom_abonne === $values['password']) {
+                return $this->loginUser($rechercheAbonne);
+            }
+        }
 
-    $rechercheAbonne = $abonneModel->getAbonneByMatricule($values['login']);
-
-
-    if (isset($rechercheAbonne) && $rechercheAbonne['nom_abonne'] === $values['password'])
-    return $this->loginUser($rechercheAbonne);
-    else {
         return redirect()->to('login');
     }
-}
+
 
 
 private function loginUser($user = null)
 {
     $session = session();
+    if(isset($user)) {
     $session->set([
-        'username' => isset($user) ? ($user['nom_abonne'] . " " . strtoupper($user['nom_abonne'])) : 'Administrator',
-        'loggedIn' => true
+        'username' => $user -> nom_abonne,
+        'loggedIn' => true,
+        'role' =>'user',
     ]);
+    } else {
+        $session->set([
+            'username' => 'Administrator',
+            'loggedIn' => true,
+            'role' =>'admin',
+        ]);
+    }
     return redirect()->to("home");
 }
 }
